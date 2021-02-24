@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/Style.css">
+    <title>Ideo</title>
+
+</head>
+
+<body>
+    <div id="intro">
+        <div class="cont_intro_in">
+            <header class="header">
+                <div class="header__cont">
+                    <div class="nav_img">
+                        <div class="nav_img_inside"> <img alt="" id="img_simple" src="assets/Img/simple.png"> </div>
+                    </div>
+                    <div class="nav"> <a class="nav_link" id="first_it" href="#">Branże</a> <a class="nav_link" href="#">Produkty</a> <a class="nav_link" href="#">Usługi</a> <a class="nav_link" href="#">Aktualności</a> <a class="nav_link" href="#">Kontakt</a> <a class="nav_link" href="#">Referencje</a> </div>
+                </div>
+                <div class="search">
+                    <div class="search__cont2" id="search">
+                        <div class="div_search_input">
+
+                                <input type="text" id="search_input" name="search">
+                        </div>
+                        <div onclick="search()" id="styl_sear"><img alt="" src="assets/Img/search.png"></div>
+                    </div>
+                </div>
+            </header>
+            <div class="conteainer_">
+                <div class="conteainer___intro_inner">
+                    <div class="simp_title">SIMPLE</div>
+                    <div class="simp_title_2">- z nami biznes jest prostszy!</div>
+                    <div class="simp_suptitle">Dowiedź się więcej</div>
+                </div>
+            </div>
+            <div class="conteiner_NewsLatter">
+                <div class="conteiner_NewsLatter__NewsLatter">
+                    <div class="slider">
+                        <div class="slider_inner">
+                            <div class="slider_item1" id="img1" onclick="ColorSliderItem(this.id)"></div>
+                            <div class="slider_item1" id="img2" onclick="ColorSliderItem(this.id)"></div>
+                            <div class="slider_item1" id="img3" onclick="ColorSliderItem(this.id)"></div>
+                            <div class="slider_item1" id="img4" onclick="ColorSliderItem(this.id)"></div>
+                        </div>
+                    </div>
+                    <div class="div_inp">
+                        <div class="inp_img_text">
+                            <div id="img"><img alt="" class="responsive" src="assets/Img/NewsLetter.png"></div>
+                            <div class="News_inp">
+                                <div id="Txt_news">
+                                    <p id="txt_news_hid">Chcesz otrzymać od nas </p>
+                                    <p>Newsletter ?</p>
+                                </div>
+                                <input type="text" class="input" name="search">
+                                <input type="text" class="input_N" name="search" placeholder="NewsLetter?"> </div>
+                        </div> <div class="button1"><a href="#" class="button1__btn">Zpisz się</a></div> </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div id="rotate" class="toggle_button" onclick="openMenu()"> <img alt="" src="assets/Img/Close_butt.png"> </div>
+                <div id="textMenu">menu</div>
+                <ul class="MainMenu">
+                    <li class="in_sidebar"><a class="in_a">Menu</a></li>
+                    <li class="in_sidebar dott1">
+                        <a class="in_a" href="#"></a>
+                    </li>
+                    <li class="in_sidebar in_sidebar_mar"> <a class="in_a" href="#">Aktualności</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Branże</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Produkty</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Usługi</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Referencje</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Kontakt</a> </li>
+                    <li class="in_sidebar in_sidebar_mar dott">
+                        <a class="in_a" href="#"></a>
+                    </li>
+                    <li class="in_sidebar in_sidebar_mar"> <a class="in_a" href="#">O firmie</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Nagrody</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Relacje</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Inwestorskie</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Partnerzy</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Kariera</a> </li>
+                    <li class="in_sidebar"> <a class="in_a" href="#">Strefa Klienta</a> </li>
+                    <li class="in_sidebar in_sidebar_mar dott">
+                        <a class="in_a" href="#"></a>
+                    </li>
+                    <li class="st_list">
+                        <ul class="in_sidebar_flex">
+                            <li class="in_sidebar in_sidebar_mar" id="in_sidebar_f">
+                                <a class="in_a" href="#"><img alt="" class="responsive1" src="assets/Img/facebook.png"></a>
+                            </li>
+                            <li class="in_sidebar" id="in_sidebar_in" >
+                                <a class="in_a" href="#"><img alt="" class="responsive1" src="assets/Img/in.png"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="section">
+        <div class="container">
+            <div class="section_header">
+                <div><img alt="" src="assets/Img/branze.png" class="responsive"></div>
+                <h1 class="hh">Branże</h1> </div>
+        </div>
+        <div class="dot"></div>
+        <div class="conteiner2 padd">
+            <div class="about">
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/edukcja.png"> </div>
+                    <div class="about_text_onimg"> edukcja </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/TRANSPORT.png"> </div>
+                    <div class="about_text_onimg"> transport & logistyka </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/produkt.png"> </div>
+                    <div class="about_text_onimg"> produkcja </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/budownictwo.png"> </div>
+                    <div class="about_text_onimg"> budownictwo </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/instituty.png"> </div>
+                    <div class="about_text_onimg"> instytuty </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/medycyna.png"> </div>
+                    <div class="about_text_onimg"> medycyna </div>
+                </div>
+            </div>
+            <div class="about ">
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/handel.png"> </div>
+                    <div class="about_text_onimg"> handel </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/MSP.png"> </div>
+                    <div class="about_text_onimg"> msp </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/administracja.png"> </div>
+                    <div class="about_text_onimg"> administracja publiczna </div>
+                </div>
+            </div>
+            <div class="about_none">
+                <div class="about_item_txt">
+                    <p class="about_text">SIMPLE to znak rozpoznawczy szerokiej rodziny rozwiązań informatycznych wspomagających zarządzanie obszarami: finansów, obrotu towarowego, personelu, procesu budownictwa, produkcji, łańcucha dostaw czy relacji z klientami. Od ponad 24 lat dostarczamy wyspecjalizowane usługi integracji rozwiązań informatycznych i </p>
+                </div>
+                <div class="about_item_txt">
+                    <p class="about_text">doradztwa biznesowego. Nasze produkty i usługi znalazły uznanie ponad 3500 klientów.Jesteśmy ludźmi, którzy doskonale znają Twój biznes. Opierając się na naszym doświadczeniu proponujemy rozwiązania, które powstały w oparciu o</p>
+                </div>
+                <div class="about_item_txt">
+                    <p class="about_text">wiedzę zatrudnianych przez nas ekspertów, a które generalnie podnoszą rangę prowadzonych procesów biznesowych i spełniają specyficzne wymagania przedsiębiorstw poszczególnych branż, zapewniając możliwość odniesienia sukcesu w coraz silniej konkurencyjnym otoczeniu.</p>
+                </div>
+            </div>
+        </div>
+        <div class="conteiner2 padd_tel">
+            <div class="about">
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/edukcja_tel.png"> </div>
+                    <div class="about_text_onimg"> edukcja </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/TRANSPORT_tel.png"> </div>
+                    <div class="about_text_onimg"> transport & logistyka </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/produkt_tel.png"> </div>
+                    <div class="about_text_onimg"> produkcja </div>
+                </div>
+            </div>
+            <div class="about" id="st1" >
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/budownictwo_tel.png"> </div>
+                    <div class="about_text_onimg"> budownictwo </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/instituty_tel.png"> </div>
+                    <div class="about_text_onimg"> instytuty </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/medycyna_tel.png"> </div>
+                    <div class="about_text_onimg"> medycyna </div>
+                </div>
+            </div>
+            <div class="about ">
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/administracja_tel.png"> </div>
+                    <div class="about_text_onimg"> handel </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/administracja_tel.png"> </div>
+                    <div class="about_text_onimg"> msp </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img1"> <img alt="" class="responsive" src="assets/Img/administracja_tel.png"> </div>
+                    <div class="about_text_onimg"> administracja publiczna </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container mar">
+            <div class="section_header produ">
+                <div><img alt="" class="responsive" src="assets/Img/produkty_folder.png"></div>
+                <h1 class="hh2">produkty</h1> </div>
+        </div>
+        <div class="dot_bl mar"></div>
+        <div class="cont_prod_tel">
+            <ul class="prod_ul">
+                <li class="in_cont_prod_tel"><a class="in_pr">wms</a></li>
+                <li class="in_cont_prod_tel"><a class="in_pr">simple.erp</a></li>
+                <li class="in_cont_prod_tel"><a class="in_pr">simple.sprint</a></li>
+                <li class="in_cont_prod_tel"><a class="in_pr">simple.crm</a></li>
+                <li class="in_cont_prod_tel"><a class="in_pr">microsoft.dynamiks<br>crm 2011</a></li>
+                <li class="in_cont_prod_tel"><a class="in_pr">obeig dokumentów </a></li>
+                <li class="in_cont_prod_tel"><a class="in_pr">simple.bl</a></li>
+                <li class="in_cont_prod_tel"><a class="in_pr">simple.aps</a></li>
+                <li class="in_cont_prod_tel"><a class="in_pr">simple.scm</a></li>
+                <li class="in_cont_prod_tel"><a class="in_pr">simple.karo hrms</a></li>
+            </ul>
+        </div>
+        <div class="conteiner2 padd143">
+            <div class="about_none">
+                <div class="about_prod">
+                    <p class="about_prod_text" id="st2" > Nieustannie doskonalimy nasze produkty i usługi. Budujemy naszą ofertę z myślą o potrzebach biznesowych i profilach branżowych naszych Klientów.Nasza oferta obejmuje bogate portfolio innowacyjnych systemów informatycznych </p>
+                </div>
+                <div class="about_prod">
+                    <p class="about_prod_text" id="st3" > kompleksowo wspomagających zarządzanie - powstałych na bazie blisko dwudziestoletnich doświadczeń i liczbie ponad 23 tysięcy użytkowników - wzbogacone kompetencjami związanymi z optymalnym doborem infrastruktury informatycznej i profesjonalnymi usługami. </p>
+                </div>
+            </div>
+            <div class="conteiner2__about">
+                <div class="about">
+                    <div class="about_prod sphere centr">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod "> wms </div>
+                    </div>
+                    <div class="about_prod sphere centr">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod"> simple.
+                            <br>erp </div>
+                    </div>
+                    <div class="about_prod sphere centr">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod"> simple.
+                            <br>sprint </div>
+                    </div>
+                    <div class="about_prod sphere centr">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod"> simple.
+                            <br>crm </div>
+                    </div>
+                    <div class="about_prod sphere">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod"> microsoft.
+                            <br>dynamiks
+                            <br>crm 2011 </div>
+                    </div>
+                </div>
+                <div class="about">
+                    <div class="about_prod spher2 centr">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod"> obeig
+                            <br>dokumentów </div>
+                    </div>
+                    <div class="about_prod spher2 centr">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod"> simple.
+                            <br>bl </div>
+                    </div>
+                    <div class="about_prod spher2 centr">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod"> simple.
+                            <br>aps </div>
+                    </div>
+                    <div class="about_prod spher2 centr">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod"> simple.
+                            <br>scm </div>
+                    </div>
+                    <div class="about_prod spher2">
+                        <div class="kolo "></div>
+                        <div class="about_text_onimg_prod"> simple.
+                            <br>karo hrms </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container usl">
+            <div class="section_header_usl">
+                <div><img alt="" class="responsive tee" src="assets/Img/uslugi.png"></div>
+                <h1 class="hh">Usługi</h1> </div>
+        </div>
+        <div class="dot"></div>
+        <div class="conteiner2 desc">
+            <div class="about">
+                <div class="about_usl" id="st_kons" >
+                    <div class="about_img_usl"> <img alt="" class="responsive" src="assets/Img/wdrozenia.png"> </div>
+                    <div class="about_text_onimg_usl"> konsulting epr,crm,bi </div>
+                </div>
+                <div class="about_usl" id="st_wdr">
+                    <div class="about_img_usl" id="wdr"> <img alt="" class="responsive" src="assets/Img/konsult.png"> </div>
+                    <div class="about_text_onimg_usl"> wdrożenia epr,crm,bi </div>
+                </div>
+            </div>
+            <div class="about_centr">
+                <div class="about_usl">
+                    <div class="about_img_usl"> <img alt="" class="responsive" src="assets/Img/szkolenia.png"> </div>
+                    <div class="about_text_onimg_usl"> szkolenia </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about_usl" id="st_dorad" >
+                    <div class="about_img_usl"> <img alt="" class="responsive" src="assets/Img/doradztwo.png"> </div>
+                    <div class="about_text_onimg_usl"> doradztwo w zakresie
+                        <br>infrastruktury informatycznej </div>
+                </div>
+                <div class="about_usl" id="st_dof" >
+                    <div class="about_img_usl" id="money"> <img alt="" class="responsive" src="assets/Img/dofinansowe.png"> </div>
+                    <div class="about_text_onimg_usl"> dofinansowanie i liasing </div>
+                </div>
+            </div>
+            <div class="conteiner2__about2">
+                <div class="about_none">
+                    <div class="about_prod" id="st4" >
+                        <p class="about_usl_text"> SIMPLE zapewnia klientom profesjonalną pomoc przy realizacji wielowariantowych, indywidualnych rozwiązań oferując usługi dzięki którym nasi Klienci szybko odnoszą konkretne korzyści biznesowe.
+                            <br>
+                            <br>Stawiamy do dyspozycji Państwa nasz doświadczony zespół programistów. Kompleksowo świadczymy usługi związane z tworzeniem na zlecenie dedykowanego oprogramowania. Nasze doświadczenie obejmuje integrację systemów wspomagających </p>
+                    </div>
+                    <div class="about_prod" id="st5" >
+                        <p class="about_usl_text"> zarządzanie z urządzeniami automatyki przemysłowej, wagami, dozownikami, a także systemami telekomunikacyjnymi i centralami telefonicznymi. i centralami telefonicznymi.
+                            <br>
+                            <br>Nasi programiści są biegli w tworzeniu oprogramowania dla środowisk Microsoft Windows-SQL ( w tym SQL 2005 i SQL 2012). Posiadamy doświadczenie w programowaniu z wykorzystaniem między innymi Power Builder, Visual Basic, Studio.net, InfoMaker, CrystalReports. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteiner2 tab">
+            <div class="about">
+                <div class="about_usl">
+                    <div class="about_img_usl"> <img alt="" class="responsive1" src="assets/Img/wdrozenia_tab.png"> </div>
+                    <div class="about_text_onimg_usl"> konsulting epr,crm,bi </div>
+                </div>
+                <div class="about_usl">
+                    <div class="about_img_usl"> <img alt="" class="responsive1" src="assets/Img/konsult_tab.png"> </div>
+                    <div class="about_text_onimg_usl"> wdrożenia epr,crm,bi </div>
+                </div>
+            </div>
+            <div class="about_centr" id="st_szkol" >
+                <div class="about_usl">
+                    <div class="about_img_usl"> <img alt="" class="responsive1" src="assets/Img/szkolenia_tab.png"> </div>
+                    <div class="about_text_onimg_usl"> szkolenia </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about_usl">
+                    <div class="about_img_usl"> <img alt="" class="responsive1" src="assets/Img/doradztwo_tab.png"> </div>
+                    <div class="about_text_onimg_usl"> doradztwo w zakresie
+                        <br>infrastruktury informatycznej </div>
+                </div>
+                <div class="about_usl">
+                    <div class="about_img_usl"> <img alt="" class="responsive1" src="assets/Img/dofinansowe_tab.png"> </div>
+                    <div class="about_text_onimg_usl"> dofinansowanie
+                        <br> i liasing </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteiner2 telef">
+            <ul class="prod_ul">
+                <li class="in_cont_usl_tel"><img alt="" class="responsive1 te" src="assets/Img/wdrozenia_tab.png">
+                    <br><a class="in_us">konsulting epr,crm,bi</a></li>
+                <li class="in_cont_usl_tel"><img alt="" class="responsive1 te" src="assets/Img/konsult_tab.png">
+                    <br><a class="in_us">wdrożenia epr,crm,bi</a></li>
+                <li class="in_cont_usl_tel"><img alt="" class="responsive1 te" src="assets/Img/szkolenia_tab.png">
+                    <br><a class="in_us">szkolenia</a></li>
+                <li class="in_cont_usl_tel"><img alt="" class="responsive1 te" src="assets/Img/doradztwo_tab.png">
+                    <br><a class="in_us te">doradztwo w zakresie infrastruktury informatycznej</a></li>
+                <li class="in_cont_usl_tel"><img alt="" class="responsive1" src="assets/Img/dofinansowe_tab.png">
+                    <br><a class="in_us">dofinansowanie i liasing</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container">
+            <div class="section_header_act">
+                <div><img alt="" class="responsive" src="assets/Img/actual.png"></div>
+                <h1 class="hh2">aktualności</h1> </div>
+        </div>
+        <div class="dot_bl"></div>
+        <div class="conteiner2 padd320">
+            <div class="about">
+                <div class="slider_">
+                    <div class="about_aktual slider_item">
+                        <div class="about_aktual__img"> <img alt="" class="responsive" src="assets/Img/top.png"> </div>
+                        <div class="about_text_onimg_aktual">
+                            <div class="article_date">1.06.2013</div>
+                            <h1 class="article_title">lorem ipsum.</h1>
+                            <p class="article_data"> lorem ipsum,lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            <p class="dot_50px"></p>
+                            <p class="article_date_w">więcej</p>
+                        </div>
+                    </div>
+                    <div class="about_aktual slider_item">
+                        <div class="about_aktual__img"> <img alt="" class="responsive" src="assets/Img/yell.png"> </div>
+                        <div class="about_text_onimg_aktual">
+                            <div class="article_date">1.06.2013</div>
+                            <h1 class="article_title">lorem ipsum.</h1>
+                            <p class="article_data"> lorem ipsum,lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            <p class="dot_50px"></p>
+                            <p class="article_date_w">więcej</p>
+                        </div>
+                    </div>
+                    <div class="about_aktual slider_item">
+                        <div class="about_aktual__img"> <img alt="" class="responsive" src="assets/Img/tap.png"> </div>
+                        <div class="about_text_onimg_aktual">
+                            <div class="article_date">1.06.2013</div>
+                            <h1 class="article_title">lorem ipsum.</h1>
+                            <p class="article_data"> lorem ipsum,lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            <p class="dot_50px"></p>
+                            <p class="article_date_w">więcej</p>
+                        </div>
+                    </div>
+                    <div class="about_aktual slider_item">
+                        <div class="about_aktual__img"> <img alt="" class="responsive" src="assets/Img/telef.png"> </div>
+                        <div class="about_text_onimg_aktual">
+                            <div class="article_date">1.06.2013</div>
+                            <h1 class="article_title">lorem ipsum.</h1>
+                            <p class="article_data"> lorem ipsum,lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            <p class="dot_50px"></p>
+                            <p class="article_date_w">więcej</p>
+                        </div>
+                    </div>
+                    <div class="about_aktual slider_item">
+                        <div class="about_aktual__img"> <img alt="" class="responsive" src="assets/Img/top.png"> </div>
+                        <div class="about_text_onimg_aktual">
+                            <div class="article_date">1.06.2013</div>
+                            <h1 class="article_title">lorem ipsum.</h1>
+                            <p class="article_data"> lorem ipsum,lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            <p class="dot_50px"></p>
+                            <p class="article_date_w">więcej</p>
+                        </div>
+                    </div>
+                    <div class="about_aktual slider_item">
+                        <div class="about_aktual__img"> <img alt="" class="responsive" src="assets/Img/yell.png"> </div>
+                        <div class="about_text_onimg_aktual">
+                            <div class="article_date">1.06.2013</div>
+                            <h1 class="article_title">lorem ipsum.</h1>
+                            <p class="article_data"> lorem ipsum,lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            <p class="dot_50px"></p>
+                            <p class="article_date_w">więcej</p>
+                        </div>
+                    </div>
+                    <div class="about_aktual slider_item">
+                        <div class="about_aktual__img"> <img alt="" class="responsive" src="assets/Img/tap.png"> </div>
+                        <div class="about_text_onimg_aktual">
+                            <div class="article_date">1.06.2013</div>
+                            <h1 class="article_title">lorem ipsum.</h1>
+                            <p class="article_data"> lorem ipsum,lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            <p class="dot_50px"></p>
+                            <p class="article_date_w">więcej</p>
+                        </div>
+                    </div>
+                    <div class="about_aktual slider_item">
+                        <div class="about_aktual__img"> <img alt="" class="responsive" src="assets/Img/telef.png"> </div>
+                        <div class="about_text_onimg_aktual">
+                            <div class="article_date">1.06.2013</div>
+                            <h1 class="article_title">lorem ipsum.</h1>
+                            <p class="article_data"> lorem ipsum,lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                            <p class="dot_50px"></p>
+                            <p class="article_date_w">więcej</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container ">
+            <div class="section_header kontaH">
+                <div><img alt="" class="responsive" src="assets/Img/kontakt.png"></div>
+                <h1 class="hh">kontakty</h1> </div>
+        </div>
+        <div class="dot"></div>
+        <div class="conteiner2 kont">
+            <div class="about  slider_kont_tel" id="nie_slider">
+                <div class="about_kont slider_item">
+                    <p class="about_text_kont">SIMPLE S.A. </p>
+                    <p class="about_text_kont">ul.Bronisława Czech 49/51
+                        <br> 04-555 Warszawa</p>
+                    <p class="about_text_kont">tel.:(22)812-58-98
+                        <br> fax.:(22)815-49-83</p>
+                    <p class="about_text_kont">simple@simple.com.pl</p>
+                </div>
+                <div class="about_kont slider_item">
+                    <p class="about_text_kont">SIMPLE S.A. </p>
+                    <p class="about_text_kont">ul.Bronisława Czech
+                        <br> 49/51 04-555 Warszawa</p>
+                    <p class="about_text_kont">tel.:(22)812-58-98
+                        <br> fax.:(22)815-49-83</p>
+                    <p class="about_text_kont">simple@simple.com.pl</p>
+                </div>
+                <div class="about_kont slider_item">
+                    <p class="about_text_kont">SIMPLE S.A. </p>
+                    <p class="about_text_kont">ul.Bronisława Czech
+                        <br> 49/51 04-555 Warszawa</p>
+                    <p class="about_text_kont">tel.:(22)812-58-98
+                        <br> fax.:(22)815-49-83</p>
+                    <p class="about_text_kont">simple@simple.com.pl</p>
+                </div>
+            </div>
+        </div>
+        <div class="dot__"></div>
+        <div class="conteiner4">
+            <div class="about">
+                <div class="about_kont">
+                    <h1 class="z_s_p_text_1">zadaj pytanie</h1>
+                    <p class="about_text_kont_simp">simple@simple.com.pl</p>
+                </div>
+                <div class="about_kont">
+                    <h1 class="z_s_p_text">praca</h1>
+                    <div class="praca_text">Zainteresowane osoby prosimy o przesłanie CVwraz z listem motywacyjnym na adres:</div>
+                </div>
+                <div class="about_kont pusty"> </div>
+            </div>
+        </div>
+        <div class="conteiner2 padd20">
+            <div class="container_flex">
+                <div class="zad_pyt">
+                    <h1 class="z_s_p_text_1">zadaj pytanie</h1>
+                    <div>
+                        <input class="input__" name="search" placeholder="Imię&Nazwisko"> </div>
+                    <div>
+                        <input class="input__" name="search" placeholder="Email"> </div>
+                    <div>
+                        <input class="input__" name="search" placeholder="Numer telefonu"> </div>
+                    <div>
+                        <input class="input__" name="search" placeholder="Temat"> </div>
+                    <div id="inp">
+                        <textarea class="input__" id="inp_" name="search" placeholder="Treść zapytania"></textarea>
+                    </div>
+                    <div class="wyslij_wybierz">
+                        <div class="wybierz">
+                            <p class="praca_text_" id="st6">Wybierz rodzaj prezentacji</p>
+                            <div class="wybierz__czeckbox">
+                                <input type="checkbox" id="siedzibie" name="siedzibie">
+                                <label class="praca_text_" for="siedzibie">W siedzibie</label>
+                                <input type="checkbox" name="Multimedialny" id="Multimedialny">
+                                <label for="Multimedialny" class="praca_text_">Multimedialna</label>
+                            </div>
+                        </div>
+                        <div class="wyslij_wybierz__btn_"> <a href="#" class="btn_">Wyślij</a> </div>
+                    </div>
+                </div>
+                <div class="social_media">
+                    <h1 class="z_s_p_text">social media</h1>
+                    <div class="media"><img alt="" class="responsive1" src="assets/Img/facebook2.png"></div>
+                    <div class="media"><img alt="" class="responsive1" src="assets/Img/twit.png"></div>
+                    <div class="media"><img alt="" class="responsive1" src="assets/Img/gogle.png"></div>
+                    <div class="media"><img alt="" class="responsive1" src="assets/Img/in2.png"></div>
+                </div>
+                <div class="praca">
+                    <h1 class="z_s_p_text">praca</h1>
+                    <div class="praca_text">Zainteresowane osoby prosimy o przesłanie CVwraz z listem motywacyjnym na adres:</div>
+                    <div class="praca_text">praca@simple.com.pl</div>
+                    <div class="praca_text_wyb">Zobacz nasze oferty...</div>
+                </div>
+            </div>
+            <div id="pad_dot">
+                <div class="dot__" id="st7" ></div>
+            </div>
+            <div id="text_powr"><a href="#" class="btn_konic">Powrót na gorę strony</a></div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="conteiner3">
+            <div class=" slider_footer">
+                <div class="about_foot"> <img alt="" src="assets/Img/vision.png" class="responsive"> </div>
+                <div class="about_foot"> <img alt="" src="assets/Img/bell.png" class="responsive"> </div>
+                <div class="about_foot"> <img alt="" src="assets/Img/Ernst.png" class="responsive"> </div>
+                <div class="about_foot"> <img alt="" src="assets/Img/Ministr.png" class="responsive"> </div>
+                <div class="about_foot"> <img alt="" class="responsive" src="assets/Img/tnt.png"> </div>
+                <div class="about_foot"> <img alt="" src="assets/Img/vision.png" class="responsive"> </div>
+                <div class="about_foot"> <img alt="" src="assets/Img/bell.png" class="responsive"> </div>
+                <div class="about_foot"> <img alt="" src="assets/Img/Ernst.png" class="responsive"> </div>
+                <div class="about_foot"> <img alt="" src="assets/Img/Ministr.png" class="responsive"> </div>
+                <div class="about_foot"> <img alt="" class="responsive" src="assets/Img/tnt.png"> </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js">
+    </script>
+    <script src="assets/JS/code.js" >
+    </script>
+    <script src="assets/JS/slick.min.js">
+    </script>
+</body>
+
+</html>
